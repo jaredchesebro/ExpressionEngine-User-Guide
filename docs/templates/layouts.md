@@ -24,6 +24,8 @@ Where "template_group" is the name of the group and "template" is the name of th
 This uses the `wrapper` template in the `site` template group as a layout for the current template. In the layout itself, you must now specify a location where the template contents will be shown using the `layout:contents` tag:
 
     {layout:contents}
+    
+The `layout:contents` tag is reserved and you are not to wrap your template code in `layout:set name="contents"` as you would using another non-reserved layout variable.
 
 NOTE: **Note:** The layout tag **must** come before any module or plugin tags.
 
